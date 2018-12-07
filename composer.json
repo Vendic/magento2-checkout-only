@@ -6,7 +6,7 @@
     "magento/magento-composer-installer": "*"
   },
   "suggest": {
-    "divante/module-vue-cart-sync": "*"
+    "divante/module-vue-cart-sync": "Syncs Vue Storefront cart with Magento 2"
   },
   "type": "magento2-module",
   "version": "0.1.0",
