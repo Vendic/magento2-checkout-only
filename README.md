@@ -1,7 +1,9 @@
 # Magento 2 Checkout Only
-A module that enables you to limit access to only the Magento checkout. Usefull for a PWA setup that uses the default Magento 2 checkout
+A module that enables you to limit frontend access to only the Magento checkout. Usefull, for example, in a PWA setup that uses PWA for catalog viewing and Magento 2 for the checkout purposes.
 
-### Vue storefront use case
+**Disclaimer: This module isn't battletested yet, use with caution**
+
+### Example use case: Vue storefront
 When using the default Magento 2 checkout, in combination with a [Vue Storefront](https://github.com/DivanteLtd/vue-storefront) frontend. The user is redirected from vue storefront to the Magento 2 cart or checkout. With this setup it makes sense to block all traffic to the other Magento 2 page types, like homepage, category page and product page. 
 
 ![External checkout for Vue Storefront](https://github.com/filrak/vsf-external-checkout/raw/master/diagram.png)
