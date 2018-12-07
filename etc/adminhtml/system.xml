@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="vendic" translate="label" sortOrder="600">
+            <label>Vendic</label>
+        </tab>
+        <section id="checkout_only_settings"
+                 translate="label"
+                 type="text"
+                 sortOrder="1"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>Checkout only settings</label>
+            <tab>vendic</tab>
+            <resource>Vendic_CheckoutOnly::config</resource>
+            <group id="general"
+                   translate="label"
+                   type="text"
+                   sortOrder="1"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>General</label>
+                <field id="enable"
+                       translate="label"
+                       type="select"
+                       sortOrder="1"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Enable module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="redirect_url"
+                       translate="label"
+                       type="text"
+                       sortOrder="1"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Redirect URL</label>
+                    <comment>We will redirect the blocked traffic to this URL. This will will generally be your frontend URL</comment>
+                </field>
+                <field id="allowed_urls"
+                       translate="label"
+                       type="textarea"
+                       sortOrder="1"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Allowed Urls</label>
+                    <comment>Add a list of URLS that are allowed, one URL per line</comment>
+                </field>
+                <field id="allowed_layout_handles"
+                       translate="label"
+                       type="textarea"
+                       sortOrder="1"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Allowed layout handles</label>
+                    <comment>Add a list of Magento layout handles that are allowed, one Magento layout handle per line</comment>
+                </field>
+                <field id="allowed_ips"
+                       translate="label"
+                       type="textarea"
+                       sortOrder="1"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Allowed IP's</label>
+                    <comment>Add a list of IPs that are allowed, one IP per line</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
