@@ -2,7 +2,7 @@
   "name": "vendic/magento2-checkoutonly",
   "description": "A module that enables you to limit access only the Magento checkout. Usefull for a PWA setup that uses the default Magento 2 checkout",
   "require": {
-    "php": "~7.0|~/7.1|~7.2",
+    "php": "~7.0|~7.1|~7.2",
     "magento/magento-composer-installer": "*"
   },
   "suggest": {
