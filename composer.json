@@ -18,5 +18,8 @@
     "psr-4": {
       "Vendic\\CheckoutOnly\\": ""
     }
+  },
+  "suggest": {
+    "vuestorefront/magento2-vue-cart-sync": "Synchronize Magento cart between Vue Storefront"
   }
 }
