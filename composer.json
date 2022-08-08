@@ -2,14 +2,14 @@
   "name": "vendic/magento2-checkoutonly",
   "description": "A module that enables you to limit access only the Magento checkout. Usefull for a PWA setup that uses the default Magento 2 checkout",
   "require": {
-    "php": "~7.0|~7.1|~7.2",
+    "php": "^7.0|^8.0",
     "magento/magento-composer-installer": "*"
   },
   "suggest": {
     "divante/module-vue-cart-sync": "Syncs Vue Storefront cart with Magento 2"
   },
   "type": "magento2-module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "autoload": {
     "files": [
